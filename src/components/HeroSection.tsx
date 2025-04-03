@@ -23,7 +23,7 @@ const HeroSection = () => {
           <h1 className="animate-fade-in font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-navy-dark mb-4">
             <span className="text-teal">Hi, I'm </span>
             <span className="relative after:content-[''] after:absolute after:w-full after:h-1 after:bg-teal after:bottom-0 after:left-0 md:after:w-3/4 md:after:left-0">
-              John Doe
+            Lennox Walter
             </span>
           </h1>
           <h2 className="animate-fade-in [animation-delay:300ms] font-heading text-xl md:text-2xl text-navy mb-6">

@@ -22,7 +22,7 @@ const Footer = () => {
             <ArrowUp size={20} />
           </button>
           
-          <h3 className="font-heading font-bold text-2xl mb-2">John Doe</h3>
+          <h3 className="font-heading font-bold text-2xl mb-2">Lennox Walter</h3>
           <p className="text-gray-300 mb-6">Full Stack Developer & Designer</p>
           
           <div className="w-16 h-1 bg-teal rounded mb-6"></div>
@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
           
           <p className="text-gray-500 text-xs">
-            &copy; {new Date().getFullYear()} John Doe. All rights reserved.
+            &copy; {new Date().getFullYear()} lennoxwalter. All rights reserved.
           </p>
         </div>
       </div>

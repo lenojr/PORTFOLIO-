@@ -1,4 +1,3 @@
-
 import React, { useEffect, useRef } from 'react';
 import { Calendar, Award, BookOpen } from 'lucide-react';
 
@@ -16,24 +15,24 @@ const EducationSection = () => {
   
   const educationItems: EducationItem[] = [
     {
-      period: '2015 - 2019',
-      degree: 'Bachelor of Science in Computer Science',
-      institution: 'Stanford University',
-      description: 'Graduated with honors. Specialized in Web Technologies and Human-Computer Interaction. Completed projects in advanced web development and UI/UX design.',
+      period: '2019 - 2022',
+      degree: 'Certificate of secondary education',
+      institution: 'Maranda school',
+      description: ' Specialized in Technologies and Human-Computer Interaction. Completed projects in advanced',
       icon: <BookOpen className="text-teal" size={24} />
     },
     {
-      period: '2019 - 2021',
-      degree: 'Master of Science in Software Engineering',
-      institution: 'Massachusetts Institute of Technology',
+      period: '2022 - 2023',
+      degree: ' Software management',
+      institution: 'Nairobi institute of technology',
       description: 'Focus on modern software development methodologies and practices. Thesis on "Improving User Experience in Progressive Web Applications".',
       icon: <Award className="text-teal" size={24} />
     },
     {
-      period: '2021 - 2022',
-      degree: 'Professional Certificate in UI/UX Design',
-      institution: 'Rhode Island School of Design',
-      description: 'Intensive program focusing on user research, interaction design, prototyping, and usability testing. Created a comprehensive design system for a healthcare application.',
+      period: '2023 - 2025',
+      degree: 'Diploma in Information Communication Technology',
+      institution: 'Technical university of mombasa',
+      description: 'further my self with web development and manegment of information systems',
       icon: <Calendar className="text-teal" size={24} />
     },
   ];
@@ -51,12 +50,13 @@ const EducationSection = () => {
       { threshold: 0.1 }
     );
 
-    itemRefs.current.forEach((item) => {
+    const currentItemRefs = [...itemRefs.current];
+    currentItemRefs.forEach((item) => {
       if (item) observer.observe(item);
     });
 
     return () => {
-      itemRefs.current.forEach((item) => {
+      currentItemRefs.forEach((item) => {
         if (item) observer.unobserve(item);
       });
     };
@@ -72,8 +72,7 @@ const EducationSection = () => {
             <div 
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className="timeline-item opacity-0"
-              style={{ animationDelay: `${index * 200}ms` }}
+              className={`timeline-item opacity-0 animation-delay-${index}`}
             >
               <div className="timeline-dot"></div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">

@@ -50,7 +50,7 @@ const NavBar = () => {
             scrollToSection('home');
           }}
         >
-          Portfolio
+        My portfolio
         </a>
 
         {/* Desktop Navigation */}

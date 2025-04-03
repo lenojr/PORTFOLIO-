@@ -17,28 +17,28 @@ const ProjectsSection = () => {
 
   const projects: Project[] = [
     {
-      title: "E-commerce Platform",
-      description: "A full-stack e-commerce platform with product catalog, shopping cart, and payment processing.",
-      tags: ["React", "Node.js", "MongoDB", "Stripe"],
+      title: "tickettripper",
+      description: "A full-stack bus booking platform with product catalog,bookings, payment processing.",
+      tags: ["typescript","css"],
       imageUrl: "https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       liveUrl: "https://example.com/project1",
-      githubUrl: "https://github.com/johndoe/project1"
+      githubUrl: "https://github.com/lenojr/tickettripper"
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather application with location-based forecasts and interactive visualizations.",
-      tags: ["JavaScript", "API Integration", "Chart.js"],
-      imageUrl: "https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+      title: "bizweb-boostaroo",
+      description: "Real-time online shoping site",
+      tags: ["react", "vite", "typescript"],
+      imageUrl: "https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       liveUrl: "https://example.com/project2",
-      githubUrl: "https://github.com/johndoe/project2"
+      githubUrl: "https://github.com/lenojr/bizweb-boostaroo"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task management application with real-time updates and team workspaces.",
-      tags: ["React", "Firebase", "Tailwind CSS"],
+      title: "swahilipot-template app",
+      description: "created a replica of a website of the swahilipot",
+      tags: ["typescript","css","javascript"],
       imageUrl: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
       liveUrl: "https://example.com/project3",
-      githubUrl: "https://github.com/johndoe/project3"
+      githubUrl: "https://github.com/lenojr/swahilipot-template"
     },
   ];
 

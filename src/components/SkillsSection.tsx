@@ -24,35 +24,35 @@ const SkillsSection = () => {
   const skills: Skill[] = [
     // Frontend
     { name: 'HTML/CSS', level: 90, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
-    { name: 'JavaScript', level: 85, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
-    { name: 'React', level: 80, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
+    { name: 'JavaScript', level: 75, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
+    { name: 'React', level: 70, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
     { name: 'TypeScript', level: 75, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
-    { name: 'Vue.js', level: 70, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
-    { name: 'Tailwind CSS', level: 85, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
-    { name: 'Responsive Design', level: 90, category: 'frontend', icon: <Navigation size={24} className="text-teal" /> },
-    { name: 'Redux', level: 75, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
+    { name: 'Vue.js', level: 60, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
+    { name: 'Tailwind CSS', level: 75, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
+    { name: 'Responsive Design', level: 60, category: 'frontend', icon: <Navigation size={24} className="text-teal" /> },
+    { name: 'Redux', level: 55, category: 'frontend', icon: <Code size={24} className="text-teal" /> },
     
     // Backend
     { name: 'Node.js', level: 80, category: 'backend', icon: <Server size={24} className="text-teal" /> },
-    { name: 'Express', level: 75, category: 'backend', icon: <Server size={24} className="text-teal" /> },
-    { name: 'MongoDB', level: 70, category: 'backend', icon: <Database size={24} className="text-teal" /> },
-    { name: 'PostgreSQL', level: 65, category: 'backend', icon: <Database size={24} className="text-teal" /> },
-    { name: 'RESTful APIs', level: 85, category: 'backend', icon: <Server size={24} className="text-teal" /> },
-    { name: 'GraphQL', level: 60, category: 'backend', icon: <Server size={24} className="text-teal" /> },
-    { name: 'JWT', level: 75, category: 'backend', icon: <Server size={24} className="text-teal" /> },
-    { name: 'Firebase', level: 70, category: 'backend', icon: <Database size={24} className="text-teal" /> },
+    { name: 'Express', level: 65, category: 'backend', icon: <Server size={24} className="text-teal" /> },
+    { name: 'MongoDB', level: 60, category: 'backend', icon: <Database size={24} className="text-teal" /> },
+    { name: 'PostgreSQL', level: 55, category: 'backend', icon: <Database size={24} className="text-teal" /> },
+    { name: 'RESTful APIs', level: 55, category: 'backend', icon: <Server size={24} className="text-teal" /> },
+    { name: 'GraphQL', level: 50, category: 'backend', icon: <Server size={24} className="text-teal" /> },
+    { name: 'JWT', level: 50, category: 'backend', icon: <Server size={24} className="text-teal" /> },
+    { name: 'Firebase', level: 40, category: 'backend', icon: <Database size={24} className="text-teal" /> },
     
     // Design
-    { name: 'Figma', level: 75, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
-    { name: 'Adobe XD', level: 70, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
-    { name: 'UI/UX Design', level: 80, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
-    { name: 'Wireframing', level: 85, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
-    { name: 'Prototyping', level: 80, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
-    { name: 'Design Systems', level: 75, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'Figma', level: 50, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'Adobe XD', level: 40, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'UI/UX Design', level: 60, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'Wireframing', level: 50, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'Prototyping', level: 50, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
+    { name: 'Design Systems', level: 55, category: 'design', icon: <PenTool size={24} className="text-teal" /> },
     
     // Other
     { name: 'Git/GitHub', level: 85, category: 'other', icon: <Award size={24} className="text-teal" /> },
-    { name: 'Agile/Scrum', level: 80, category: 'other', icon: <Award size={24} className="text-teal" /> },
+    { name: 'Agile/Scrum', level: 60, category: 'other', icon: <Award size={24} className="text-teal" /> },
     { name: 'Problem Solving', level: 90, category: 'other', icon: <Award size={24} className="text-teal" /> },
     { name: 'Testing', level: 75, category: 'other', icon: <Award size={24} className="text-teal" /> },
     { name: 'CI/CD', level: 70, category: 'other', icon: <Award size={24} className="text-teal" /> },
@@ -96,8 +96,7 @@ const SkillsSection = () => {
               </div>
               <div className="w-full bg-gray-200 rounded-full h-2.5">
                 <div 
-                  className="bg-teal h-2.5 rounded-full"
-                  style={{ width: `${skill.level}%` }}
+                  className={`bg-teal h-2.5 rounded-full skill-level-${index}`}
                 ></div>
               </div>
               <div className="mt-2 text-right text-sm text-navy-light">
