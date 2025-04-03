@@ -23,8 +23,7 @@ const AboutSection = () => {
             <div className="md:w-2/3">
               <p className="text-navy-light mb-4">
                 Hello! I'm a passionate Full Stack Developer with a strong background in both front-end and back-end technologies. 
-                With over 5 years of experience in the field, I've had the opportunity to work on a variety of projects that have 
-                sharpened my skills and broadened my perspective.
+                With over 3 years of experience in the field, I've had the opportunity to work on a variety of projects that have sharpened my skills and broadened my perspective.
               </p>
               <p className="text-navy-light mb-4">
                 I believe in creating digital solutions that not only meet functional requirements but also provide 

@@ -57,7 +57,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-navy-dark">Email</h3>
-                  <p className="text-navy-light">hello@johndoe.com</p>
+                  <p className="text-navy-light">@lennoxwalter.com</p>
                 </div>
               </div>
               
@@ -67,7 +67,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-navy-dark">Phone</h3>
-                  <p className="text-navy-light">+1 (555) 123-4567</p>
+                  <p className="text-navy-light">+2540738398330</p>
                 </div>
               </div>
               
@@ -77,7 +77,7 @@ const ContactSection = () => {
                 </div>
                 <div>
                   <h3 className="font-medium text-navy-dark">Location</h3>
-                  <p className="text-navy-light">San Francisco, CA</p>
+                  <p className="text-navy-light">Mombasa,Kenya</p>
                 </div>
               </div>
             </div>
@@ -85,13 +85,13 @@ const ContactSection = () => {
             <div className="mt-10">
               <h3 className="font-medium text-navy-dark mb-4">Connect With Me</h3>
               <div className="flex space-x-4">
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" title="LinkedIn" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
                   <Linkedin className="text-teal" size={20} />
                 </a>
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                <a href="https://github.com" target="_blank" rel="noopener noreferrer" title="GitHub" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
                   <Github className="text-teal" size={20} />
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
+                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" title="Twitter" className="bg-white p-3 rounded-full shadow-sm border border-gray-200 hover:shadow-md transition-all">
                   <Twitter className="text-teal" size={20} />
                 </a>
               </div>
