@@ -43,7 +43,8 @@ const EducationSection = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add('animate-fade-in');
+            entry.target.classList.add('opacity-100');
+            entry.target.classList.remove('opacity-0', 'translate-y-10');
             observer.unobserve(entry.target);
           }
         });
@@ -51,15 +52,20 @@ const EducationSection = () => {
       { threshold: 0.1 }
     );
 
-    const currentItemRefs = itemRefs.current.filter(Boolean);
-    currentItemRefs.forEach((item) => {
-      if (item) observer.observe(item);
-    });
+    if (itemRefs.current) {
+      const currentItemRefs = itemRefs.current.filter(Boolean);
+      currentItemRefs.forEach((item) => {
+        if (item) observer.observe(item);
+      });
+    }
 
     return () => {
-      currentItemRefs.forEach((item) => {
-        if (item) observer.unobserve(item);
-      });
+      if (itemRefs.current) {
+        const currentItemRefs = itemRefs.current.filter(Boolean);
+        currentItemRefs.forEach((item) => {
+          if (item) observer.unobserve(item);
+        });
+      }
     };
   }, []);
 
@@ -73,8 +79,8 @@ const EducationSection = () => {
             <div 
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className={`timeline-item opacity-0 transition-opacity duration-500`}
-              style={{ animationDelay: `${index * 0.3}s` }}
+              className="timeline-item opacity-0 transform translate-y-10 transition-all duration-700 ease-out"
+              style={{ transitionDelay: `${index * 300}ms` }}
             >
               <div className="timeline-dot"></div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
