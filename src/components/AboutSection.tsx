@@ -13,7 +13,7 @@ const AboutSection = () => {
             <div className="md:w-1/3 mb-6 md:mb-0">
               <div className="aspect-square bg-gray-200 rounded-xl overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
+                  src="20250404-1036551.jpg" 
                   alt="Profile" 
                   className="w-full h-full object-cover"
                 />
