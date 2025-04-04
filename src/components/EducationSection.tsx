@@ -1,5 +1,6 @@
+
 import React, { useEffect, useRef } from 'react';
-import { Calendar, Award, BookOpen } from 'lucide-react';
+import { Calendar, Award, GraduationCap, BookOpen } from 'lucide-react';
 
 interface EducationItem {
   period: string;
@@ -16,24 +17,24 @@ const EducationSection = () => {
   const educationItems: EducationItem[] = [
     {
       period: '2019 - 2022',
-      degree: 'Certificate of secondary education',
-      institution: 'Maranda school',
-      description: ' Specialized in Technologies and Human-Computer Interaction. Completed projects in advanced',
+      degree: 'Certificate of Secondary Education',
+      institution: 'Maranda School',
+      description: 'Specialized in Technologies and Human-Computer Interaction. Completed projects in advanced programming and system design.',
       icon: <BookOpen className="text-teal" size={24} />
     },
     {
       period: '2022 - 2023',
-      degree: ' Software management',
-      institution: 'Nairobi institute of technology',
+      degree: 'Software Management',
+      institution: 'Nairobi Institute of Technology',
       description: 'Focus on modern software development methodologies and practices. Thesis on "Improving User Experience in Progressive Web Applications".',
       icon: <Award className="text-teal" size={24} />
     },
     {
       period: '2023 - 2025',
       degree: 'Diploma in Information Communication Technology',
-      institution: 'Technical university of mombasa',
-      description: 'further my self with web development and manegment of information systems',
-      icon: <Calendar className="text-teal" size={24} />
+      institution: 'Technical University of Mombasa',
+      description: 'Advanced study in web development and management of information systems. Specializing in full-stack development and cloud technologies.',
+      icon: <GraduationCap className="text-teal" size={24} />
     },
   ];
 
@@ -50,7 +51,7 @@ const EducationSection = () => {
       { threshold: 0.1 }
     );
 
-    const currentItemRefs = [...itemRefs.current];
+    const currentItemRefs = itemRefs.current.filter(Boolean);
     currentItemRefs.forEach((item) => {
       if (item) observer.observe(item);
     });
@@ -72,7 +73,8 @@ const EducationSection = () => {
             <div 
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className={`timeline-item opacity-0 animation-delay-${index}`}
+              className={`timeline-item opacity-0 transition-opacity duration-500`}
+              style={{ animationDelay: `${index * 0.3}s` }}
             >
               <div className="timeline-dot"></div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
