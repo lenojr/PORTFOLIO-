@@ -59,13 +59,12 @@ const EducationSection = () => {
       });
     }
 
+    const cleanupRefs = [...itemRefs.current];
+
     return () => {
-      if (itemRefs.current) {
-        const currentItemRefs = itemRefs.current.filter(Boolean);
-        currentItemRefs.forEach((item) => {
-          if (item) observer.unobserve(item);
-        });
-      }
+      cleanupRefs.filter(Boolean).forEach((item) => {
+        if (item) observer.unobserve(item);
+      });
     };
   }, []);
 
@@ -79,8 +78,8 @@ const EducationSection = () => {
             <div 
               key={index}
               ref={(el) => (itemRefs.current[index] = el)}
-              className="timeline-item opacity-0 transform translate-y-10 transition-all duration-700 ease-out"
-              style={{ transitionDelay: `${index * 300}ms` }}
+              className="timeline-item"
+              data-index={index}
             >
               <div className="timeline-dot"></div>
               <div className="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
