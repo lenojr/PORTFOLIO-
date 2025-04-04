@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { User, Heart, Lightbulb, Globe } from 'lucide-react';
 
@@ -12,9 +11,11 @@ const AboutSection = () => {
           <div className="flex flex-col md:flex-row md:space-x-8">
             <div className="md:w-1/3 mb-6 md:mb-0">
               <div className="aspect-square bg-gray-200 rounded-xl overflow-hidden">
-           <img src="20250404_1036551.jpg"alt="Profile" 
+                <img 
+                  src="/20250404_103651.jpg" 
+                  alt="Profile" 
                   className="w-full h-full object-cover"
-              />
+                />
               </div>
             </div>
             
@@ -79,3 +80,4 @@ const AboutSection = () => {
 };
 
 export default AboutSection;
+

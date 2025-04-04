@@ -12,11 +12,7 @@ const HeroSection = () => {
       });
     }
   };
-  <img src="20250404_1036551.jpg"alt="Profile" 
-  className="w-full h-full object-cover"
-/>
-
-  return (
+return (
     <section 
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-navy/5 to-teal/10 pt-20"
