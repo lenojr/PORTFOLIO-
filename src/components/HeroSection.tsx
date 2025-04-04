@@ -12,9 +12,6 @@ const HeroSection = () => {
       });
     }
   };
-  <img src="20250404_1036551.jpg"alt="Profile" 
-  className="w-full h-full object-cover"
-/>
 
   return (
     <section 
