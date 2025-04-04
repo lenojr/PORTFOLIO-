@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { ArrowDown } from 'lucide-react';
 
@@ -12,7 +11,8 @@ const HeroSection = () => {
       });
     }
   };
-return (
+
+  return (
     <section 
       id="home" 
       className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-navy/5 to-teal/10 pt-20"
@@ -80,3 +80,4 @@ return (
 };
 
 export default HeroSection;
+
